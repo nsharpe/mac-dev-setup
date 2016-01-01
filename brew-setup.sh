@@ -18,6 +18,7 @@ fi
 
 BREW_LIST="bash
 git
+wget
 rbenv
 ruby-build
 coreutils
@@ -31,6 +32,7 @@ docker-machine
 docker-compose
 cassandra
 python
+grc
 "
 CASK_LIST="virtualbox
 vagrant
@@ -38,6 +40,7 @@ vagrant-manager
 google-chrome
 suspicious-package
 textwrangler
+macvim
 "
 
 # Install tools that will not require cask
