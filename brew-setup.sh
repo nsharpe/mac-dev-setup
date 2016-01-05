@@ -7,7 +7,18 @@ command -v brew >/dev/null 2>&1 || { echo >&2 "Brew is not installed... Installi
 echo "Updating Brew"
 brew update
 
-brew tap caskroom/cask
+TAP_LIST="caskroom/cask
+"
+
+# Install tools that will not require cask
+for pkg in $TAP_LIST; do
+    if brew tap -1 | grep -q "^${pkg}\$"; then
+        echo "Tap '$pkg' is already installed"
+    else
+        echo "Tapping '$pkg'"
+        brew tap $pkg
+    fi
+done
 
 BREW_LIST="brew-cask
 bash
