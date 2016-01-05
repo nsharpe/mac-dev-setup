@@ -7,16 +7,10 @@ command -v brew >/dev/null 2>&1 || { echo >&2 "Brew is not installed... Installi
 echo "Updating Brew"
 brew update
 
-# Ensure brew cask is installed.
-# This will ensure that items that are downloaded as a dmg will work correctly
-if brew list -l | grep -q "brew-cask"; then
-    echo "Package brew-cask is already installed"
-else
-    echo "Installing brew-cask"
-    brew install caskroom/cask/brew-cask
-fi
+brew tap caskroom/cask
 
-BREW_LIST="bash
+BREW_LIST="brew-cask
+bash
 git
 wget
 rbenv
@@ -41,6 +35,7 @@ google-chrome
 suspicious-package
 textwrangler
 macvim
+mysqlworkbench
 "
 
 # Install tools that will not require cask
