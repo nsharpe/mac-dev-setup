@@ -47,6 +47,7 @@ suspicious-package
 textwrangler
 macvim
 mysqlworkbench
+screenhero
 "
 
 # Install tools that will not require cask
