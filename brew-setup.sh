@@ -36,7 +36,6 @@ docker
 docker-machine
 docker-compose
 cassandra
-python
 grc
 "
 CASK_LIST="virtualbox
