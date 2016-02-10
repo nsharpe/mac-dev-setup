@@ -37,7 +37,6 @@ docker-machine
 docker-compose
 cassandra
 grc
-boot2docker
 "
 CASK_LIST="virtualbox
 vagrant
