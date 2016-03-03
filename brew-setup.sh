@@ -68,3 +68,11 @@ for pkg in $CASK_LIST; do
         brew cask install $pkg
     fi
 done
+
+# Ensure gradle is installed after java
+if brew list -1 | grep -q "^gradle\$"; then
+    echo "Package 'gradle' is already installed"
+  else
+    echo "Installing 'gradle'"
+    brew install gradle
+fi
