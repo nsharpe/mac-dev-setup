@@ -43,7 +43,6 @@ virtualbox
 vagrant
 vagrant-manager
 google-chrome
-suspicious-package
 textwrangler
 macvim
 mysqlworkbench
