@@ -38,7 +38,8 @@ docker-compose
 cassandra
 grc
 "
-CASK_LIST="virtualbox
+CASK_LIST="java
+virtualbox
 vagrant
 vagrant-manager
 google-chrome
