@@ -33,7 +33,6 @@ awscli
 wget
 libvpx
 docker
-docker-machine
 docker-compose
 cassandra
 grc
@@ -47,6 +46,7 @@ textwrangler
 macvim
 mysqlworkbench
 screenhero
+dockertoolbox
 "
 
 # Install tools that will not require cask
