@@ -35,6 +35,7 @@ libvpx
 grc
 "
 CASK_LIST="java
+keepassx
 google-chrome
 textwrangler
 macvim
