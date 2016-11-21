@@ -32,21 +32,13 @@ ack
 awscli
 wget
 libvpx
-docker
-docker-compose
-cassandra
 grc
 "
 CASK_LIST="java
-virtualbox
-vagrant
-vagrant-manager
 google-chrome
 textwrangler
 macvim
 mysqlworkbench
-screenhero
-dockertoolbox
 "
 
 # Install tools that will not require cask
