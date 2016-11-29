@@ -10,3 +10,6 @@ alias docker-rmai="docker images --no-trunc -aq | xargs docker rmi"
 alias docker-rmav="docker volume ls -qf dangling=true | xargs docker volume rm "
 # rm all containers, images, and volumes
 alias docker-clear-all="docker-rmac; docker-rmai; docker-rmav"
+
+# prefered way of searching a directory
+alias la="ls -la"
