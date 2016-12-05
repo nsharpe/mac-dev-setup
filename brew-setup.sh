@@ -33,6 +33,7 @@ awscli
 wget
 libvpx
 grc
+jsonlint
 "
 CASK_LIST="java
 keepassx
