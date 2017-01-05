@@ -13,3 +13,12 @@ alias docker-clear-all="docker-rmac; docker-rmai; docker-rmav"
 
 # prefered way of searching a directory
 alias la="ls -la"
+
+### GIT HELPERS
+
+# export the current branch name to BRANCH_NAME
+alias export-branch-name="export BRANCH_NAME='$(git rev-parse --abbrev-ref HEAD)'"
+# Pull the latest from master
+alias pull-master="git checkout master; git pull origin master"
+# Rebase the current branch ontop of master
+alias rebase-master="export-branch-name; pull-master; git checkout $BRANCH_NAME"
