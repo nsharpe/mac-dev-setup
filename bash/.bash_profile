@@ -19,6 +19,6 @@ alias la="ls -la"
 # export the current branch name to BRANCH_NAME
 alias ex-branch-name="export BRANCH_NAME='$(git rev-parse --abbrev-ref HEAD)'"
 # Pull the latest from master
-alias pull-master="git checkout master; git pull origin master"
+alias pull-master="ex-branch-name; git checkout master; git pull origin master; git checkout $BRANCH_NAME"
 # Rebase the current branch ontop of master
-alias rebase-master="ex-branch-name; pull-master; git checkout $BRANCH_NAME"
+alias rebase-master="pull-master; git rebase master"
