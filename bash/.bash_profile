@@ -20,4 +20,4 @@ alias ex-branch-name='BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"'
 # Pull the latest from master
 alias pull-master="ex-branch-name; git checkout master; git pull origin master; git checkout $BRANCH_NAME"
 # Rebase the current branch ontop of master
-alias rebase-master="pull-master; git rebase master"
+alias rebase-master="~/scripts/git-rebase-master.sh"
