@@ -8,5 +8,4 @@ git pull origin master
 
 # Rebase the current branch ontop of master
 git checkout $BRANCH_NAME
-pull-master
 git rebase master
