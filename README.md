@@ -12,3 +12,8 @@ Setup git configuration
 ```
 curl https://raw.githubusercontent.com/nsharpe/mac-dev-setup/master/git-setup.sh | bash
 ```
+
+Install scripts
+```
+curl https://raw.githubusercontent.com/nsharpe/mac-dev-setup/master/install-scripts.sh | bash
+```
