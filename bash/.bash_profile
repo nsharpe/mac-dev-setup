@@ -1,6 +1,8 @@
 
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
+source ~/scripts/non_persist.sh
+
 # Docker aliases
 # rm all containers
 alias docker-rmac="docker ps -aq | xargs docker rm"
