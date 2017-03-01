@@ -23,3 +23,6 @@ alias ex-branch-name='BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"'
 alias pull-master="ex-branch-name; git checkout master; git pull origin master; git checkout $BRANCH_NAME"
 # Rebase the current branch ontop of master
 alias rebase-master="~/scripts/git-rebase-master.sh"
+
+### Mvn Helpers (For use with existing mvn projects.  Prefer Gradle)
+alias mvn-fresh-exec="mvn clean install -DskipTests; mvn exec:java"
