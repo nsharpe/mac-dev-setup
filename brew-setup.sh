@@ -34,6 +34,7 @@ wget
 libvpx
 grc
 jsonlint
+pssh
 "
 CASK_LIST="java
 keepassx
