@@ -29,3 +29,6 @@ alias rebase-master="~/scripts/git-rebase-master.sh"
 
 ### Mvn Helpers (For use with existing mvn projects.  Prefer Gradle)
 alias mvn-fresh-exec="mvn clean install -DskipTests; mvn exec:java"
+
+function ps-grep {ps aux | grep "$1" | grep -v grep;}
+export -f ps-grep
