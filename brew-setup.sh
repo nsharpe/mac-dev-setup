@@ -39,6 +39,7 @@ google-chrome
 textwrangler
 macvim
 mysqlworkbench
+java
 "
 
 # Install tools that will not require cask
