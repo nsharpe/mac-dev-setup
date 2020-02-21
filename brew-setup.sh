@@ -24,8 +24,6 @@ BREW_LIST="brew-cask
 bash
 git
 wget
-rbenv
-ruby-build
 coreutils
 findutils
 ack
@@ -36,8 +34,7 @@ grc
 jsonlint
 pssh
 "
-CASK_LIST="java
-keepassx
+CASK_LIST="keepassx
 google-chrome
 textwrangler
 macvim
