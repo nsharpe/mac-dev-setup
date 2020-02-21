@@ -7,7 +7,7 @@ command -v brew >/dev/null 2>&1 || { echo >&2 "Brew is not installed... Installi
 echo "Updating Brew"
 brew update
 
-TAP_LIST="caskroom/cask
+TAP_LIST="homebrew/cask-cask
 "
 
 # Install tools that will not require cask
