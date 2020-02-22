@@ -7,7 +7,7 @@ command -v brew >/dev/null 2>&1 || { echo >&2 "Brew is not installed... Installi
 echo "Updating Brew"
 brew update
 
-TAP_LIST="homebrew/cask-cask
+TAP_LIST="
 "
 
 # Install tools that will not require cask
@@ -36,7 +36,7 @@ pssh
 "
 CASK_LIST="keepassx
 google-chrome
-textwrangler
+bbedit
 macvim
 mysqlworkbench
 java
