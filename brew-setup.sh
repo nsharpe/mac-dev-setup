@@ -7,7 +7,7 @@ command -v brew >/dev/null 2>&1 || { echo >&2 "Brew is not installed... Installi
 echo "Updating Brew"
 brew update
 
-TAP_LIST=()
+TAP_LIST=('AdoptOpenJDK/openjdk')
 
 # Tapping casks
 for pkg in $TAP_LIST; do
@@ -38,7 +38,8 @@ CASK_LIST=('keepassx'
 'bbedit'
 'macvim'
 'mysqlworkbench'
-'java')
+'adoptopenjdk'
+'adoptopenjdk8')
 
 # Install tools that will not require cask
 for pkg in $BREW_LIST; do
