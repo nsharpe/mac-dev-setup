@@ -11,7 +11,7 @@ TAP_LIST=('AdoptOpenJDK/openjdk')
 
 # Tapping casks
 for pkg in $TAP_LIST; do
-    if brew tap -1 | grep -q "^${pkg}\$"; then
+    if brew tap | grep -q "^${pkg}\$"; then
         echo "Tap '$pkg' is already installed"
     else
         echo "Tapping '$pkg'"
