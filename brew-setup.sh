@@ -33,13 +33,12 @@ BREW_LIST=('brew-cask'
 'jsonlint'
 'pssh')
 
-CASK_LIST=(keepassx
-google-chrome
-bbedit
-macvim
-mysqlworkbench
-java
-)
+CASK_LIST=('keepassx'
+'google-chrome'
+'bbedit'
+'macvim'
+'mysqlworkbench'
+'java')
 
 # Install tools that will not require cask
 for pkg in $BREW_LIST; do
