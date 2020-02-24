@@ -19,7 +19,7 @@ for pkg in $TAP_LIST; do
     fi
 done
 
-BREW_LIST=('brew-cask'
+BREW_LIST=(
 'bash'
 'git'
 'wget'
