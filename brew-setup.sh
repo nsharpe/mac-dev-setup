@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Install brew if not installed
 echo "Installing brew if not installed"
@@ -19,19 +19,19 @@ for pkg in $TAP_LIST; do
     fi
 done
 
-BREW_LIST=(brew-cask
-bash
-git
-wget
-coreutils
-findutils
-ack
-awscli
-wget
-libvpx
-grc
-jsonlint
-pssh)
+BREW_LIST=('brew-cask'
+'bash'
+'git'
+'wget'
+'coreutils'
+'findutils'
+'ack'
+'awscli'
+'wget'
+'libvpx'
+'grc'
+'jsonlint'
+'pssh')
 
 CASK_LIST=(keepassx
 google-chrome
