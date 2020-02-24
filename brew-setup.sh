@@ -7,8 +7,7 @@ command -v brew >/dev/null 2>&1 || { echo >&2 "Brew is not installed... Installi
 echo "Updating Brew"
 brew update
 
-TAP_LIST="
-"
+TAP_LIST=()
 
 # Install tools that will not require cask
 for pkg in $TAP_LIST; do
@@ -20,7 +19,7 @@ for pkg in $TAP_LIST; do
     fi
 done
 
-BREW_LIST="brew-cask
+BREW_LIST=(brew-cask
 bash
 git
 wget
@@ -32,15 +31,15 @@ wget
 libvpx
 grc
 jsonlint
-pssh
-"
-CASK_LIST="keepassx
+pssh)
+
+CASK_LIST=(keepassx
 google-chrome
 bbedit
 macvim
 mysqlworkbench
 java
-"
+)
 
 # Install tools that will not require cask
 for pkg in $BREW_LIST; do
