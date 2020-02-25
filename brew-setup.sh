@@ -61,10 +61,16 @@ for pkg in $CASK_LIST; do
     fi
 done
 
-# Ensure gradle is installed after java
-if brew list -1 | grep -q "^gradle\$"; then
-    echo "Package 'gradle' is already installed"
-  else
-    echo "Installing 'gradle'"
-    brew install gradle
-fi
+
+INSTALL_AFTER_CASK_LIST=('gradle'
+'maven')
+
+# Install tools that will not require cask
+for pkg in $INSTALL_AFTER_CASK_LIST; do
+    if brew list -1 | grep -q "^${pkg}\$"; then
+        echo "Package '$pkg' is already installed"
+    else
+        echo "Installing '$pkg'"
+        brew install $pkg
+    fi
+done
