@@ -74,3 +74,7 @@ for pkg in $INSTALL_AFTER_CASK_LIST; do
         brew install $pkg
     fi
 done
+
+#configuring mvim
+curl https://raw.githubusercontent.com/nsharpe/mac-dev-setup/master/bash/.vimrc > /usr/share/vim/vimrc/.vimrc
+
