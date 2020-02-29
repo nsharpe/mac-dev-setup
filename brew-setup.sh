@@ -77,5 +77,5 @@ for pkg in $INSTALL_AFTER_CASK_LIST; do
 done
 
 #configuring mvim
-curl https://raw.githubusercontent.com/nsharpe/mac-dev-setup/master/bash/.vimrc > /usr/share/vim/.vimrc
+curl https://raw.githubusercontent.com/nsharpe/mac-dev-setup/master/bash/.vimrc > ~.vimrc
 
