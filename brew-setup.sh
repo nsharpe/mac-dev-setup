@@ -31,7 +31,8 @@ BREW_LIST=(
 'libvpx'
 'grc'
 'jsonlint'
-'pssh')
+'pssh'
+'postman')
 
 CASK_LIST=('keepassx'
 'google-chrome'
