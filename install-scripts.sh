@@ -2,7 +2,6 @@
 
 mkdir ~/scripts
 touch ~/scripts/non_persist.sh
-touch ~/.vimrc
 
 curl https://raw.githubusercontent.com/nsharpe/mac-dev-setup/master/scripts/git-rebase-master.sh > ~/scripts/git-rebase-master.sh
 mv ~/.zshrc ~/.zshrc.old
