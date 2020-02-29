@@ -31,8 +31,7 @@ BREW_LIST=(
 'libvpx'
 'grc'
 'jsonlint'
-'pssh'
-'postman')
+'pssh')
 
 CASK_LIST=('keepassx'
 'google-chrome'
@@ -40,7 +39,8 @@ CASK_LIST=('keepassx'
 'macvim'
 'mysqlworkbench'
 'adoptopenjdk'
-'adoptopenjdk8')
+'adoptopenjdk8'
+'postman')
 
 # Install tools that will not require cask
 for pkg in $BREW_LIST; do
