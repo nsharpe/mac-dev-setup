@@ -42,7 +42,7 @@ CASK_LIST=('keepassx'
 
 # Install tools that will not require cask
 for pkg in $BREW_LIST; do
-    if brew list -1 | grep -q "^${pkg}\$"; then
+    if brew list --formula -1 | grep -q "^${pkg}\$"; then
         echo "Package '$pkg' is already installed"
     else
         echo "Installing '$pkg'"
@@ -66,7 +66,7 @@ INSTALL_AFTER_CASK_LIST=('gradle'
 
 # Install tools that will not require cask
 for pkg in $INSTALL_AFTER_CASK_LIST; do
-    if brew list -1 | grep -q "^${pkg}\$"; then
+    if brew list --formula -1 | grep -q "^${pkg}\$"; then
         echo "Package '$pkg' is already installed"
     else
         echo "Installing '$pkg'"
