@@ -21,13 +21,11 @@ done
 
 BREW_LIST=(
 'bash'
-'git'
 'wget'
 'coreutils'
 'findutils'
 'ack'
 'awscli'
-'wget'
 'libvpx'
 'grc'
 'jsonlint'
@@ -54,11 +52,11 @@ done
 
 # Install tools that will require cask
 for pkg in $CASK_LIST; do
-    if brew cask list -1 | grep -q "^${pkg}\$"; then
+    if brew list --cask -1 | grep -q "^${pkg}\$"; then
         echo "Package '$pkg' is already installed"
     else
         echo "Installing '$pkg'"
-        brew cask install $pkg
+        brew install --cask $pkg
     fi
 done
 
