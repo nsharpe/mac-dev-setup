@@ -12,3 +12,4 @@ Install scripts
 ```
 curl https://raw.githubusercontent.com/nsharpe/mac-dev-setup/master/install-scripts.sh | zsh
 ```
+
